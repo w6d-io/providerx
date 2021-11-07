@@ -4,5 +4,6 @@
 
 ### Features
 
+* intitialize providerx chore: update dependencies
 * intitialize providerx
 
