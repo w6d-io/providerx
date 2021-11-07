@@ -1,0 +1,86 @@
+syntax = "proto3";
+
+option go_package = "github.com/w6d-io/providerx";
+
+service Provider {
+  rpc LisProject(ListProjectRequest) returns (ListProjectResponse) {}
+  rpc SetWebhook(SetWebhookRequest) returns (SetWebhookResponse) {}
+  rpc DeleteWebhook(DeleteWebhookRequest) returns (DeleteWebhookResponse) {}
+  rpc CheckAccessUserInProject(CheckAccessUserInProjectRequest) returns (CheckAccessUserInProjectResponse) {}
+}
+
+message ListProjectRequest {
+  string apiUrl      = 1;
+  string token       = 2;
+  int32  page        = 3;
+  int32  perPage     = 4;
+  int32  idUser      = 5;
+  int32  accessLevel = 6;
+}
+
+message ListProjectResponse {
+  int32            page     = 1;
+  bool             eof      = 2;
+  repeated Project projects = 3;
+  bool             response = 4;
+}
+
+message SetWebhookRequest {
+  string              urlRepo = 1;
+  string              token   = 2;
+  int32               idRepo  = 3;
+}
+
+message SetWebhookResponse {
+  bool response   = 1;
+  int32 webhookId = 2;
+}
+
+message Project {
+  int32  ID             = 1;
+  string name           = 2;
+  string url            = 3;
+  string httpUrl        = 4;
+  string defaultBranch  = 5;
+  string lastActivityAt = 6;
+  string fullPath       = 7;
+  bool   private        = 8;
+  bool   admin          = 9;
+  Owner  owner          = 10;
+}
+
+message Owner {
+  int32     id        = 1;
+  string    login     = 2;
+  string    avatarUrl = 3;
+  OwnerType type      = 4;
+}
+
+enum OwnerType {
+  USER  = 0;
+  GROUP = 1;
+}
+
+message DeleteWebhookRequest {
+  string urlRepo   = 1;
+  string token     = 2;
+  int32  idRepo    = 3;
+  int32  webhookId = 4;
+}
+
+message DeleteWebhookResponse {
+  bool response = 1;
+  bool deleted  = 2;
+}
+
+message CheckAccessUserInProjectRequest {
+  string urlRepo = 1;
+  string token   = 2;
+}
+
+message CheckAccessUserInProjectResponse {
+  bool response = 1;
+  bool admin    = 2;
+  bool push     = 3;
+  bool pull     = 4;
+}
