@@ -1,9 +1,17 @@
 
+<a name="v0.2.0"></a>
+## [v0.2.0](https://gitlab.w6d.io/w6d/project/-/compare/v0.1.0...v0.2.0) (2021-11-07)
+
+### Chore
+
+* rename method
+
+
 <a name="v0.1.0"></a>
 ## v0.1.0 (2021-11-07)
 
 ### Features
 
-* intitialize providerx chore: update dependencies
+* intitialize providerx
 * intitialize providerx
 

@@ -8,8 +8,8 @@
     - [CheckAccessUserInProjectResponse](#.CheckAccessUserInProjectResponse)
     - [DeleteWebhookRequest](#.DeleteWebhookRequest)
     - [DeleteWebhookResponse](#.DeleteWebhookResponse)
-    - [ListProjectRequest](#.ListProjectRequest)
-    - [ListProjectResponse](#.ListProjectResponse)
+    - [ListProjectsRequest](#.ListProjectsRequest)
+    - [ListProjectsResponse](#.ListProjectsResponse)
     - [Owner](#.Owner)
     - [Project](#.Project)
     - [SetWebhookRequest](#.SetWebhookRequest)
@@ -98,9 +98,9 @@
 
 
 
-<a id=".ListProjectRequest"></a>
+<a id=".ListProjectsRequest"></a>
 
-### ListProjectRequest
+### ListProjectsRequest
 
 
 
@@ -118,9 +118,9 @@
 
 
 
-<a id=".ListProjectResponse"></a>
+<a id=".ListProjectsResponse"></a>
 
-### ListProjectResponse
+### ListProjectsResponse
 
 
 
@@ -236,7 +236,7 @@
 
 | Method Name | Request Type | Response Type | Description |
 | ----------- | ------------ | ------------- | ------------|
-| LisProject | [.ListProjectRequest](#ListProjectRequest) | [.ListProjectResponse](#ListProjectResponse) |  |
+| LisProjects | [.ListProjectsRequest](#ListProjectsRequest) | [.ListProjectsResponse](#ListProjectsResponse) |  |
 | SetWebhook | [.SetWebhookRequest](#SetWebhookRequest) | [.SetWebhookResponse](#SetWebhookResponse) |  |
 | DeleteWebhook | [.DeleteWebhookRequest](#DeleteWebhookRequest) | [.DeleteWebhookResponse](#DeleteWebhookResponse) |  |
 | CheckAccessUserInProject | [.CheckAccessUserInProjectRequest](#CheckAccessUserInProjectRequest) | [.CheckAccessUserInProjectResponse](#CheckAccessUserInProjectResponse) |  |
