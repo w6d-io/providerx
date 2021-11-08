@@ -3,7 +3,7 @@ syntax = "proto3";
 option go_package = "github.com/w6d-io/providerx";
 
 service Provider {
-  rpc LisProjects(ListProjectsRequest) returns (ListProjectsResponse) {}
+  rpc ListProjects(ListProjectsRequest) returns (ListProjectsResponse) {}
   rpc SetWebhook(SetWebhookRequest) returns (SetWebhookResponse) {}
   rpc DeleteWebhook(DeleteWebhookRequest) returns (DeleteWebhookResponse) {}
   rpc CheckAccessUserInProject(CheckAccessUserInProjectRequest) returns (CheckAccessUserInProjectResponse) {}
