@@ -18,7 +18,7 @@ const _ = grpc.SupportPackageIsVersion7
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ProviderClient interface {
-	LisProjects(ctx context.Context, in *ListProjectsRequest, opts ...grpc.CallOption) (*ListProjectsResponse, error)
+	ListProjects(ctx context.Context, in *ListProjectsRequest, opts ...grpc.CallOption) (*ListProjectsResponse, error)
 	SetWebhook(ctx context.Context, in *SetWebhookRequest, opts ...grpc.CallOption) (*SetWebhookResponse, error)
 	DeleteWebhook(ctx context.Context, in *DeleteWebhookRequest, opts ...grpc.CallOption) (*DeleteWebhookResponse, error)
 	CheckAccessUserInProject(ctx context.Context, in *CheckAccessUserInProjectRequest, opts ...grpc.CallOption) (*CheckAccessUserInProjectResponse, error)
@@ -32,9 +32,9 @@ func NewProviderClient(cc grpc.ClientConnInterface) ProviderClient {
 	return &providerClient{cc}
 }
 
-func (c *providerClient) LisProjects(ctx context.Context, in *ListProjectsRequest, opts ...grpc.CallOption) (*ListProjectsResponse, error) {
+func (c *providerClient) ListProjects(ctx context.Context, in *ListProjectsRequest, opts ...grpc.CallOption) (*ListProjectsResponse, error) {
 	out := new(ListProjectsResponse)
-	err := c.cc.Invoke(ctx, "/Provider/LisProjects", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/Provider/ListProjects", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -72,7 +72,7 @@ func (c *providerClient) CheckAccessUserInProject(ctx context.Context, in *Check
 // All implementations must embed UnimplementedProviderServer
 // for forward compatibility
 type ProviderServer interface {
-	LisProjects(context.Context, *ListProjectsRequest) (*ListProjectsResponse, error)
+	ListProjects(context.Context, *ListProjectsRequest) (*ListProjectsResponse, error)
 	SetWebhook(context.Context, *SetWebhookRequest) (*SetWebhookResponse, error)
 	DeleteWebhook(context.Context, *DeleteWebhookRequest) (*DeleteWebhookResponse, error)
 	CheckAccessUserInProject(context.Context, *CheckAccessUserInProjectRequest) (*CheckAccessUserInProjectResponse, error)
@@ -83,8 +83,8 @@ type ProviderServer interface {
 type UnimplementedProviderServer struct {
 }
 
-func (UnimplementedProviderServer) LisProjects(context.Context, *ListProjectsRequest) (*ListProjectsResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method LisProjects not implemented")
+func (UnimplementedProviderServer) ListProjects(context.Context, *ListProjectsRequest) (*ListProjectsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method ListProjects not implemented")
 }
 func (UnimplementedProviderServer) SetWebhook(context.Context, *SetWebhookRequest) (*SetWebhookResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method SetWebhook not implemented")
@@ -108,20 +108,20 @@ func RegisterProviderServer(s grpc.ServiceRegistrar, srv ProviderServer) {
 	s.RegisterService(&Provider_ServiceDesc, srv)
 }
 
-func _Provider_LisProjects_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Provider_ListProjects_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(ListProjectsRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(ProviderServer).LisProjects(ctx, in)
+		return srv.(ProviderServer).ListProjects(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/Provider/LisProjects",
+		FullMethod: "/Provider/ListProjects",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(ProviderServer).LisProjects(ctx, req.(*ListProjectsRequest))
+		return srv.(ProviderServer).ListProjects(ctx, req.(*ListProjectsRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -188,8 +188,8 @@ var Provider_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*ProviderServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "LisProjects",
-			Handler:    _Provider_LisProjects_Handler,
+			MethodName: "ListProjects",
+			Handler:    _Provider_ListProjects_Handler,
 		},
 		{
 			MethodName: "SetWebhook",
