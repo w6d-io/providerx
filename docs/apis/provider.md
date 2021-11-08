@@ -236,7 +236,7 @@
 
 | Method Name | Request Type | Response Type | Description |
 | ----------- | ------------ | ------------- | ------------|
-| LisProjects | [.ListProjectsRequest](#ListProjectsRequest) | [.ListProjectsResponse](#ListProjectsResponse) |  |
+| ListProjects | [.ListProjectsRequest](#ListProjectsRequest) | [.ListProjectsResponse](#ListProjectsResponse) |  |
 | SetWebhook | [.SetWebhookRequest](#SetWebhookRequest) | [.SetWebhookResponse](#SetWebhookResponse) |  |
 | DeleteWebhook | [.DeleteWebhookRequest](#DeleteWebhookRequest) | [.DeleteWebhookResponse](#DeleteWebhookResponse) |  |
 | CheckAccessUserInProject | [.CheckAccessUserInProjectRequest](#CheckAccessUserInProjectRequest) | [.CheckAccessUserInProjectResponse](#CheckAccessUserInProjectResponse) |  |
