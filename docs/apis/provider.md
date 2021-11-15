@@ -73,7 +73,7 @@
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | url | [string](#string) |  |  |
-| fullPath | [string](#string) |  |  |
+| namespace | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 | idRepo | [int32](#int32) |  |  |
 | webhookId | [int32](#int32) |  |  |
@@ -169,7 +169,7 @@
 | httpUrl | [string](#string) |  |  |
 | defaultBranch | [string](#string) |  |  |
 | lastActivityAt | [string](#string) |  |  |
-| fullPath | [string](#string) |  |  |
+| namespace | [string](#string) |  |  |
 | private | [bool](#bool) |  |  |
 | admin | [bool](#bool) |  |  |
 | owner | [Owner](#Owner) |  |  |
@@ -188,7 +188,7 @@
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | url | [string](#string) |  |  |
-| fullPath | [string](#string) |  |  |
+| namespace | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 | idRepo | [int32](#int32) |  |  |
 
