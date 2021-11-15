@@ -38,7 +38,7 @@
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| urlRepo | [string](#string) |  |  |
+| url | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 
 
@@ -72,7 +72,8 @@
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| urlRepo | [string](#string) |  |  |
+| url | [string](#string) |  |  |
+| fullPath | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 | idRepo | [int32](#int32) |  |  |
 | webhookId | [int32](#int32) |  |  |
@@ -186,7 +187,8 @@
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| urlRepo | [string](#string) |  |  |
+| url | [string](#string) |  |  |
+| fullPath | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 | idRepo | [int32](#int32) |  |  |
 

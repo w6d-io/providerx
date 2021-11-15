@@ -53,12 +53,6 @@ rm -rf $$TMP_DIR ;\
 }
 endef
 
-.PHONY: test
-test: fmt vet
-	go test -v -coverpkg=./... -coverprofile=cover-tmp.out ./...
-	cat cover-tmp.out | grep -v ".pb.go" > cover.out
-	@go tool cover -func cover.out | grep total
-
 .PHONY: fmt
 fmt:
 	go fmt ./...
