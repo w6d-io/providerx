@@ -26,10 +26,10 @@ message ListProjectsResponse {
 }
 
 message SetWebhookRequest {
-  string              url      = 1;
-  string              fullPath = 2;
-  string              token    = 3;
-  int32               idRepo   = 4;
+  string              url       = 1;
+  string              namespace = 2;
+  string              token     = 3;
+  int32               idRepo    = 4;
 }
 
 message SetWebhookResponse {
@@ -44,7 +44,7 @@ message Project {
   string httpUrl        = 4;
   string defaultBranch  = 5;
   string lastActivityAt = 6;
-  string fullPath       = 7;
+  string namespace      = 7;
   bool   private        = 8;
   bool   admin          = 9;
   Owner  owner          = 10;
@@ -64,7 +64,7 @@ enum OwnerType {
 
 message DeleteWebhookRequest {
   string url       = 1;
-  string fullPath  = 2;
+  string namespace = 2;
   string token     = 3;
   int32  idRepo    = 4;
   int32  webhookId = 5;
