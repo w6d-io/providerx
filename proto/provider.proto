@@ -26,9 +26,10 @@ message ListProjectsResponse {
 }
 
 message SetWebhookRequest {
-  string              urlRepo = 1;
-  string              token   = 2;
-  int32               idRepo  = 3;
+  string              url      = 1;
+  string              fullPath = 2;
+  string              token    = 3;
+  int32               idRepo   = 4;
 }
 
 message SetWebhookResponse {
@@ -62,10 +63,11 @@ enum OwnerType {
 }
 
 message DeleteWebhookRequest {
-  string urlRepo   = 1;
-  string token     = 2;
-  int32  idRepo    = 3;
-  int32  webhookId = 4;
+  string url       = 1;
+  string fullPath  = 2;
+  string token     = 3;
+  int32  idRepo    = 4;
+  int32  webhookId = 5;
 }
 
 message DeleteWebhookResponse {
@@ -74,8 +76,8 @@ message DeleteWebhookResponse {
 }
 
 message CheckAccessUserInProjectRequest {
-  string urlRepo = 1;
-  string token   = 2;
+  string url   = 1;
+  string token = 2;
 }
 
 message CheckAccessUserInProjectResponse {

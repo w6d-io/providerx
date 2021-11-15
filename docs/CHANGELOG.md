@@ -1,4 +1,12 @@
 
+<a name="v0.3.2"></a>
+## [v0.3.2](https://gitlab.w6d.io/w6d/project/-/compare/v0.3.1...v0.3.2) (2021-11-15)
+
+### Performance Improvements
+
+* update webhook message
+
+
 <a name="v0.3.1"></a>
 ## [v0.3.1](https://gitlab.w6d.io/w6d/project/-/compare/v0.3.0...v0.3.1) (2021-11-08)
 
