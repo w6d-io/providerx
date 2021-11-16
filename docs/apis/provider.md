@@ -127,10 +127,11 @@
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| page | [int32](#int32) |  |  |
-| eof | [bool](#bool) |  |  |
-| projects | [Project](#Project) | repeated |  |
 | response | [bool](#bool) |  |  |
+| page | [int32](#int32) |  |  |
+| lastPage | [int32](#int32) |  |  |
+| projects | [Project](#Project) | repeated |  |
+| latestPage | [bool](#bool) |  |  |
 
 
 
