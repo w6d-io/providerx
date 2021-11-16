@@ -1,4 +1,12 @@
 
+<a name="v0.3.4"></a>
+## [v0.3.4](https://gitlab.w6d.io/w6d/project/-/compare/v0.3.3...v0.3.4) (2021-11-16)
+
+### Features
+
+* add lastPage in list projects message
+
+
 <a name="v0.3.3"></a>
 ## [v0.3.3](https://gitlab.w6d.io/w6d/project/-/compare/v0.3.2...v0.3.3) (2021-11-15)
 

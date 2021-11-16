@@ -19,10 +19,11 @@ message ListProjectsRequest {
 }
 
 message ListProjectsResponse {
-  int32            page     = 1;
-  bool             eof      = 2;
-  repeated Project projects = 3;
-  bool             response = 4;
+  bool             response   = 1;
+  int32            page       = 2;
+  int32            lastPage   = 3;
+  repeated Project projects   = 4;
+  bool             latestPage = 5;
 }
 
 message SetWebhookRequest {
