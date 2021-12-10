@@ -38,7 +38,8 @@
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| url | [string](#string) |  |  |
+| project | [Project](#Project) |  |  |
+| userId | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 
 

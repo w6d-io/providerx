@@ -77,8 +77,9 @@ message DeleteWebhookResponse {
 }
 
 message CheckAccessUserInProjectRequest {
-  string url   = 1;
-  string token = 2;
+  Project project = 1;
+  string  userId  = 2;
+  string token    = 3;
 }
 
 message CheckAccessUserInProjectResponse {

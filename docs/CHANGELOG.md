@@ -1,4 +1,12 @@
 
+<a name="v0.4.0"></a>
+## [v0.4.0](https://gitlab.w6d.io/w6d/project/-/compare/v0.3.4...v0.4.0) (2021-12-10)
+
+### Code Refactoring
+
+* update CheckAccessUserInProjectRequest by adding project and userid and remove url which in the project
+
+
 <a name="v0.3.4"></a>
 ## [v0.3.4](https://gitlab.w6d.io/w6d/project/-/compare/v0.3.3...v0.3.4) (2021-11-16)
 
