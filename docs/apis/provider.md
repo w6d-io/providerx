@@ -38,9 +38,10 @@
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| project | [Project](#Project) |  |  |
-| userId | [string](#string) |  |  |
+| url | [string](#string) |  |  |
 | token | [string](#string) |  |  |
+| userId | [string](#string) |  |  |
+| project | [Project](#Project) |  |  |
 
 
 
@@ -108,7 +109,7 @@
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| apiUrl | [string](#string) |  |  |
+| url | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 | page | [int32](#int32) |  |  |
 | perPage | [int32](#int32) |  |  |

@@ -10,7 +10,7 @@ service Provider {
 }
 
 message ListProjectsRequest {
-  string apiUrl      = 1;
+  string url         = 1;
   string token       = 2;
   int32  page        = 3;
   int32  perPage     = 4;
@@ -77,9 +77,10 @@ message DeleteWebhookResponse {
 }
 
 message CheckAccessUserInProjectRequest {
-  Project project = 1;
-  string  userId  = 2;
-  string token    = 3;
+  string  url     = 1;
+  string  token   = 2;
+  string  userId  = 3;
+  Project project = 4;
 }
 
 message CheckAccessUserInProjectResponse {

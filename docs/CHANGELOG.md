@@ -1,4 +1,12 @@
 
+<a name="v0.5.0"></a>
+## [v0.5.0](https://gitlab.w6d.io/w6d/project/-/compare/v0.4.0...v0.5.0) (2021-12-11)
+
+### Code Refactoring
+
+* replace apiUrl by url, change getBaseUrl CheckAccessUserInProjectRequest signature
+
+
 <a name="v0.4.0"></a>
 ## [v0.4.0](https://gitlab.w6d.io/w6d/project/-/compare/v0.3.4...v0.4.0) (2021-12-10)
 
