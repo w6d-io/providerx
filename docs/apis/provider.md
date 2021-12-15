@@ -194,6 +194,7 @@
 | namespace | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 | idRepo | [int32](#int32) |  |  |
+| params | [string](#string) |  |  |
 
 
 

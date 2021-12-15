@@ -27,14 +27,15 @@ message ListProjectsResponse {
 }
 
 message SetWebhookRequest {
-  string              url       = 1;
-  string              namespace = 2;
-  string              token     = 3;
-  int32               idRepo    = 4;
+  string url       = 1;
+  string namespace = 2;
+  string token     = 3;
+  int32  idRepo    = 4;
+  string params    = 5;
 }
 
 message SetWebhookResponse {
-  bool response   = 1;
+  bool  response  = 1;
   int32 webhookId = 2;
 }
 

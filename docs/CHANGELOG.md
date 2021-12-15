@@ -1,4 +1,12 @@
 
+<a name="v0.5.1"></a>
+## [v0.5.1](https://gitlab.w6d.io/w6d/project/-/compare/v0.5.0...v0.5.1) (2021-12-15)
+
+### Features
+
+* add params field for webhook settings
+
+
 <a name="v0.5.0"></a>
 ## [v0.5.0](https://gitlab.w6d.io/w6d/project/-/compare/v0.4.0...v0.5.0) (2021-12-11)
 
