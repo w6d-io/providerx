@@ -226,8 +226,8 @@
 
 | Name | Number | Description |
 | ---- | ------ | ----------- |
-| USER | 0 |  |
-| GROUP | 1 |  |
+| User | 0 |  |
+| Group | 1 |  |
 
 
  <!-- end enums -->
