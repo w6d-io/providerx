@@ -19,11 +19,11 @@ message ListProjectsRequest {
 }
 
 message ListProjectsResponse {
-  bool             response   = 1;
-  int32            page       = 2;
-  int32            lastPage   = 3;
-  repeated Project projects   = 4;
-  bool             latestPage = 5;
+  bool                response   = 1;
+  int32               page       = 2;
+  int32               lastPage   = 3;
+  repeated Repository projects   = 4;
+  bool                latestPage = 5;
 }
 
 message SetWebhookRequest {
@@ -39,7 +39,7 @@ message SetWebhookResponse {
   int32 webhookId = 2;
 }
 
-message Project {
+message Repository {
   int32  ID             = 1;
   string name           = 2;
   string url            = 3;
@@ -81,7 +81,7 @@ message CheckAccessUserInProjectRequest {
   string  url     = 1;
   string  token   = 2;
   string  userId  = 3;
-  Project project = 4;
+  Repository project = 4;
 }
 
 message CheckAccessUserInProjectResponse {

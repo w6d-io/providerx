@@ -11,7 +11,7 @@
     - [ListProjectsRequest](#.ListProjectsRequest)
     - [ListProjectsResponse](#.ListProjectsResponse)
     - [Owner](#.Owner)
-    - [Project](#.Project)
+    - [Repository](#.Repository)
     - [SetWebhookRequest](#.SetWebhookRequest)
     - [SetWebhookResponse](#.SetWebhookResponse)
   
@@ -41,7 +41,7 @@
 | url | [string](#string) |  |  |
 | token | [string](#string) |  |  |
 | userId | [string](#string) |  |  |
-| project | [Project](#Project) |  |  |
+| project | [Repository](#Repository) |  |  |
 
 
 
@@ -132,7 +132,7 @@
 | response | [bool](#bool) |  |  |
 | page | [int32](#int32) |  |  |
 | lastPage | [int32](#int32) |  |  |
-| projects | [Project](#Project) | repeated |  |
+| projects | [Repository](#Repository) | repeated |  |
 | latestPage | [bool](#bool) |  |  |
 
 
@@ -158,9 +158,9 @@
 
 
 
-<a id=".Project"></a>
+<a id=".Repository"></a>
 
-### Project
+### Repository
 
 
 
