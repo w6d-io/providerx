@@ -50,6 +50,7 @@ message Repository {
   bool   private        = 8;
   bool   admin          = 9;
   Owner  owner          = 10;
+  bool   isEmpty        = 11;
 }
 
 message Owner {

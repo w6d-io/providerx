@@ -176,6 +176,7 @@
 | private | [bool](#bool) |  |  |
 | admin | [bool](#bool) |  |  |
 | owner | [Owner](#Owner) |  |  |
+| isEmpty | [bool](#bool) |  |  |
 
 
 

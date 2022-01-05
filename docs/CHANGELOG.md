@@ -1,10 +1,14 @@
 
+<a name="v0.6.1"></a>
+## [v0.6.1](https://gitlab.w6d.io/w6d/project/-/compare/v0.6.0...v0.6.1) (2022-01-05)
+
+
 <a name="v0.6.0"></a>
 ## [v0.6.0](https://gitlab.w6d.io/w6d/project/-/compare/v0.5.2...v0.6.0) (2021-12-28)
 
 ### Code Refactoring
 
-* rename project to repository BREAKING CHANGE: to avoid name collision we rename Project to Repository [d39a043]("https://gitlab.w6d.io/w6d/project/-/commit/d39a04342231b8fc7e9cd939a847249d47f98526")
+* rename project to repository BREAKING CHANGE: to avoid name collision we rename Project to Repository [cec3bca]("https://gitlab.w6d.io/w6d/project/-/commit/cec3bca603ad5072866783d0fcc4908867ed1839")
 
 
 <a name="v0.5.2"></a>
