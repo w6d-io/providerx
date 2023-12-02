@@ -229,6 +229,7 @@
 | ---- | ------ | ----------- |
 | User | 0 |  |
 | Group | 1 |  |
+| Organization | 2 |  |
 
 
  <!-- end enums -->
